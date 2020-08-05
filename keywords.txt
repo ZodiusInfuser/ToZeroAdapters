@@ -1,0 +1,67 @@
+#######################################
+# Syntax Coloring Map ToZero
+#######################################
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+ToZero		KEYWORD1
+ToZero_3x	KEYWORD1
+ToZero_4x	KEYWORD1
+ToZero_GPIO	KEYWORD1
+ToZero_Serial	KEYWORD1
+ToZero_I2C	KEYWORD1
+ToZero_SPI	KEYWORD1
+
+GPIO_Serial		KEYWORD1
+ExtraSerial		KEYWORD1
+ExtraSerial1		KEYWORD1
+ExtraSerial2		KEYWORD1
+
+GPIO_I2C		KEYWORD1
+GPIO_ID			KEYWORD1
+BreakoutI2C		KEYWORD1
+ExtraI2C		KEYWORD1
+
+GPIO_SPI		KEYWORD1
+BreakoutSPI		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+ExtraSerial_Configure	KEYWORD2
+GPIO_SPI_Configure	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+GPIO_2			LITERAL1
+GPIO_3			LITERAL1
+GPIO_4			LITERAL1
+GPIO_17			LITERAL1
+GPIO_27			LITERAL1
+GPIO_22			LITERAL1
+GPIO_10			LITERAL1
+GPIO_9			LITERAL1
+GPIO_11			LITERAL1
+ID_SD			LITERAL1
+GPIO_5			LITERAL1
+GPIO_6			LITERAL1
+GPIO_13			LITERAL1
+GPIO_19			LITERAL1
+GPIO_26			LITERAL1
+GPIO_14			LITERAL1
+GPIO_15			LITERAL1
+GPIO_18			LITERAL1
+GPIO_23			LITERAL1
+GPIO_24			LITERAL1
+GPIO_25			LITERAL1
+GPIO_8			LITERAL1
+GPIO_7			LITERAL1
+ID_SC			LITERAL1
+GPIO_12			LITERAL1
+GPIO_16			LITERAL1
+GPIO_20			LITERAL1
+GPIO_21			LITERAL1
+GPIO_SPI_CE0		LITERAL1
+GPIO_SPI_CE1		LITERAL1
+BREAKOUT_SPI_CE0	LITERAL1

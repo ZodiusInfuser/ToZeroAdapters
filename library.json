@@ -1,0 +1,14 @@
+{
+  "name": "ToZero Adapters",
+  "keywords": "Arduino, Teensy, Raspberry Pi, HAT",
+  "description": "Arduino library for the ToZero family of adapter boards, letting you use Raspberry Pi HATs with a Teensy.",
+  "url": "https://github.com/ZodiusInfuser/ToZeroAdapters",
+  "include": "ToZero",
+  "authors":
+  [
+    {
+      "name": "Christopher Parrott"
+    }
+  ],
+  "frameworks": "arduino"
+}
