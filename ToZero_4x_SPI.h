@@ -20,29 +20,27 @@ Copyright (c) 2020 Christopher (@ZodiusInfuser) Parrott. All right reserved.
 	static SPIClass& BreakoutSPI = SPI1;
 #endif
 
-	enum ToZero_4x_SPI
-	{
-		GPIO_SPI_MOSI = GPIO_10,
-		GPIO_SPI_MISO = GPIO_9,
-		GPIO_SPI_SCK = GPIO_11,
-		GPIO_SPI_CE0 = GPIO_8,
-	#ifdef GPIO7_ASSIGNED
-		GPIO_SPI_CE1 = GPIO_7,
-	#endif
+	#define GPIO_SPI_MOSI		GPIO_10
+	#define GPIO_SPI_MISO		GPIO_9
+	#define GPIO_SPI_SCK		GPIO_11
+	#define GPIO_SPI_CE0		GPIO_8
+#ifdef GPIO_7
+	#define GPIO_SPI_CE1		GPIO_7
+#endif
 
-	#if (defined(ARDUINO_TEENSY40) && !defined(NO_TEENSY_UNDERSIDE_PINS)) || defined(ARDUINO_TEENSY41)
-		BREAKOUT_SPI_MOSI = 26,
-		BREAKOUT_SPI_SCK = 27,
-	#endif
+#if (defined(ARDUINO_TEENSY40) && !defined(NO_TEENSY_UNDERSIDE_PINS)) || defined(ARDUINO_TEENSY41)
+	#define BREAKOUT_SPI_MOSI		26
+	#define BREAKOUT_SPI_SCK		27
+#endif
 
-	#if defined(ARDUINO_TEENSY40)
-		BREAKOUT_SPI_MISO = 1,		
-		BREAKOUT_SPI_CE0 = 0,
-	#elif defined(ARDUINO_TEENSY41)
-		BREAKOUT_SPI_MISO = 39,
-		BREAKOUT_SPI_CE0 = 38,
-	#endif
-	};
+#if defined(ARDUINO_TEENSY40)
+	#define BREAKOUT_SPI_MISO		1
+	#define BREAKOUT_SPI_CE0		0
+#elif defined(ARDUINO_TEENSY41)
+	#define BREAKOUT_SPI_MISO		39
+	#define BREAKOUT_SPI_CE0		38
+#endif
+
 
 	#define TO_ZERO_SPI_SETUP
 	static inline void ToZero_SPI_Setup(void)

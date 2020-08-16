@@ -20,23 +20,20 @@ Copyright (c) 2020 Christopher (@ZodiusInfuser) Parrott. All right reserved.
 	static SPIClass& BreakoutSPI = SPI2;
 #endif
 
-	enum ToZero_3x_SPI
-	{
-		GPIO_SPI_MOSI = GPIO_10,
-		GPIO_SPI_MISO = GPIO_9,
-		GPIO_SPI_SCK = GPIO_11,
-		GPIO_SPI_CE0 = GPIO_8,
-	#ifdef GPIO7_ASSIGNED
-		GPIO_SPI_CE1 = GPIO_7,
-	#endif
+	#define GPIO_SPI_MOSI	GPIO_10
+	#define GPIO_SPI_MISO	GPIO_9
+	#define GPIO_SPI_SCK	GPIO_11
+	#define GPIO_SPI_CE0	GPIO_8
+#ifdef GPIO_7
+	#define GPIO_SPI_CE1	GPIO_7
+#endif
 
-	#if defined(__MK64FX512__) || defined(__MK66FX1M0__) //Teensy 3.5 & 3.6
-		BREAKOUT_SPI_MOSI = 44,
-		BREAKOUT_SPI_MISO = 45,
-		BREAKOUT_SPI_SCK = 46,
-		BREAKOUT_SPI_CE0 = 43,
-	#endif
-	};
+#if defined(__MK64FX512__) || defined(__MK66FX1M0__) //Teensy 3.5 & 3.6
+	#define BREAKOUT_SPI_MOSI	44
+	#define BREAKOUT_SPI_MISO	45
+	#define BREAKOUT_SPI_SCK	46
+	#define BREAKOUT_SPI_CE0	43
+#endif
 
 	#define TO_ZERO_SPI_SETUP
 	static inline void ToZero_SPI_Setup(void)
