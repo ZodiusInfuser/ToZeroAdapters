@@ -10,12 +10,12 @@
 //#define NO_TEENSY_UNDERSIDE_PINS
 
 //Uncomment these if you have changed the underside solder jumpers for GPIO5 and GPIO6
-//#ifdef MAP_GPIO5_TO_SPECIAL
-//#ifdef MAP_GPIO6_TO_SPECIAL
+//#define MAP_GPIO5_TO_SPECIAL
+//#define MAP_GPIO6_TO_SPECIAL
 
 //Uncomment these if you have changed the underside solder jumpers
-//#ifdef SWAP_GPIO16_TO_CE1
-//#ifdef SWAP_GPIO27_TO_GPIO26
+//#define SWAP_GPIO16_TO_CE1
+//#define SWAP_GPIO27_TO_GPIO26
 
 /***** Library Includes *****/
 //#include <Wire.h>
