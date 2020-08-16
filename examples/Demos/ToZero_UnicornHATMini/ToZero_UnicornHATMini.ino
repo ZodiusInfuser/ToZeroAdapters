@@ -7,7 +7,6 @@
 /***** Library Includes *****/
 #include <Metro.h>
 #include <FastLED.h>
-#include <ToZero.h>
 
 /***** Project Includes *****/
 #include "UnicornMini.h"
